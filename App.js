@@ -17,6 +17,7 @@ import { RestaurantsScreen } from "./src/features/restuarants/screens/restaurant
 import { SafeArea } from "./src/components/utility/safe-area.component";
 import { RestaurantsContextProvider } from "./src/services/restaurants/restaurants.context";
 import { LocationContextProvider } from "./src/services/location/location.context";
+import { Navigation } from "./src/infrastructure/navigation";
 
 const Tab = createBottomTabNavigator();
 
@@ -37,17 +38,6 @@ const Map = () => (
   </SafeArea>
 );
 
-const createScreenOptions = ({ route }) => {
-  const iconName = TAB_ICON[route.name];
-  return {
-    tabBarIcon: ({ size, color }) => (
-      <Ionicons name={iconName} size={size} color={color} />
-    ),
-    tabBarActiveTintColor: "tomato",
-    tabBarInactiveTintColor: "gray",
-  };
-};
-
 export default function App() {
   const [oswaldLoaded] = useOswald({
     Oswald_400Regular,
@@ -66,13 +56,7 @@ export default function App() {
       <ThemeProvider theme={theme}>
         <LocationContextProvider>
           <RestaurantsContextProvider>
-            <NavigationContainer>
-              <Tab.Navigator screenOptions={createScreenOptions}>
-                <Tab.Screen name="Restaurants" component={RestaurantsScreen} />
-                <Tab.Screen name="Map" component={Map} />
-                <Tab.Screen name="Settings" component={Settings} />
-              </Tab.Navigator>
-            </NavigationContainer>
+            <Navigation />
           </RestaurantsContextProvider>
         </LocationContextProvider>
       </ThemeProvider>
