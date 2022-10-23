@@ -15,14 +15,18 @@ export const AuthenticationContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [error, setError] = useState(null);
 
-  onAuthStateChanged(getAuth(), (u) => {
-    if (u) {
-      setUser(u);
-    } else {
-      setUser(null);
-    }
-    setIsLoading(false);
-  });
+  useEffect(
+    () =>
+      onAuthStateChanged(getAuth(), (u) => {
+        if (u) {
+          setUser(u);
+        } else {
+          setUser(null);
+        }
+        setIsLoading(false);
+      }),
+    []
+  );
 
   const onLogin = (email, password) => {
     setIsLoading(true);
@@ -55,8 +59,10 @@ export const AuthenticationContextProvider = ({ children }) => {
   };
 
   const onLogout = () => {
-    setUser(null);
-    signOut(getAuth());
+    signOut(getAuth()).then(() => {
+      setUser(null);
+      setError(null);
+    });
   };
 
   return (
