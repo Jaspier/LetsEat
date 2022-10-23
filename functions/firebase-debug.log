@@ -1,0 +1,1226 @@
+[debug] [2022-10-23T19:50:24.826Z] ----------------------------------------------------------------------
+[debug] [2022-10-23T19:50:24.827Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --only functions
+[debug] [2022-10-23T19:50:24.827Z] CLI Version:   11.11.0
+[debug] [2022-10-23T19:50:24.827Z] Platform:      darwin
+[debug] [2022-10-23T19:50:24.828Z] Node Version:  v16.15.1
+[debug] [2022-10-23T19:50:24.828Z] Time:          Sun Oct 23 2022 20:50:24 GMT+0100 (British Summer Time)
+[debug] [2022-10-23T19:50:24.828Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-23T19:50:24.856Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-23T19:50:24.856Z] > authorizing via signed-in user (dungoallen349@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-10-23T19:50:24.863Z] [hub] writing locator at /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/hub-letseat-bd251.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, eventarc {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, eventarc\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-10-23T19:50:24.879Z] defaultcredentials: writing to file /Users/allendungo/.config/firebase/dungoallen349_gmail_com_application_default_credentials.json
+[debug] [2022-10-23T19:50:24.880Z] Setting GAC to /Users/allendungo/.config/firebase/dungoallen349_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/allendungo/.config/firebase/dungoallen349_gmail_com_application_default_credentials.json"}}
+[debug] [2022-10-23T19:50:24.882Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/letseat-bd251/adminSdkConfig [none]
+[debug] [2022-10-23T19:50:26.236Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/letseat-bd251/adminSdkConfig 200
+[debug] [2022-10-23T19:50:26.236Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/letseat-bd251/adminSdkConfig {"projectId":"letseat-bd251","storageBucket":"letseat-bd251.appspot.com"}
+[debug] [2022-10-23T19:50:26.526Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-23T19:50:26.526Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-10-23T19:50:26.526Z] Starting Emulator UI with command {"binary":"node","args":["/Users/allendungo/.cache/firebase/emulators/ui-v1.9.0/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/allendungo/.cache/firebase/emulators/ui-v1.9.0/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-10-23T19:50:26.619Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/Users/allendungo/Work/LetsEat/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/allendungo/Work/LetsEat/functions\" for Cloud Functions..."}}
+[debug] [2022-10-23T19:50:26.795Z] Validating nodejs source
+[debug] [2022-10-23T19:50:27.562Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T19:50:27.563Z] Building nodejs source
+[debug] [2022-10-23T19:50:27.563Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T19:50:27.565Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T19:50:27.656Z] Serving at port 9005
+
+[debug] [2022-10-23T19:50:27.722Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T19:50:27.726Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode."}}
+[info] ✔  functions[us-central1-geocode]: http function initialized (http://localhost:5001/letseat-bd251/us-central1/geocode). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/letseat-bd251/us-central1/geocode)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-10-23T19:50:52.966Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T19:50:52.967Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T19:50:52.967Z] Accepted request GET /letseat-bd251/us-central1/geocode --> us-central1-geocode
+[debug] [2022-10-23T19:50:52.968Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T19:50:52.969Z] [functions] Got req.url=/letseat-bd251/us-central1/geocode, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/geocode, mapping to path=/"}}
+[debug] [2022-10-23T19:50:52.978Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-10-23T19:50:52.979Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-10-23T19:50:53.288Z] [runtime-status] [51758] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51758] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T19:50:53.289Z] [runtime-status] [51758] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51758] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:50:53.289Z] [runtime-status] [51758] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51758] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-23T19:50:53.289Z] [runtime-status] [51758] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51758] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:50:53.339Z] [runtime-status] [51758] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51758] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-23T19:50:53.340Z] [runtime-status] [51758] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51758] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2022-10-23T19:50:53.340Z] [runtime-status] [51758] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51758] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:50:53.340Z] [runtime-status] [51758] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51758] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T19:50:53.341Z] [runtime-status] [51758] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51758] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:50:53.341Z] [runtime-status] [51758] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51758] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-23T19:50:53.343Z] [runtime-status] [51758] Functions runtime initialized. {"cwd":"/Users/allendungo/Work/LetsEat/functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51758] Functions runtime initialized. {\"cwd\":\"/Users/allendungo/Work/LetsEat/functions\",\"node_version\":\"16.15.1\"}"}}
+[debug] [2022-10-23T19:50:53.343Z] [runtime-status] [51758] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_905e4aab8c0577ae.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51758] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_905e4aab8c0577ae.sock"}}
+[debug] [2022-10-23T19:50:53.390Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-23T19:50:53.391Z] [worker-us-central1-geocode-ad289323-f121-4a56-a8d3-1f8b1d4a942e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-ad289323-f121-4a56-a8d3-1f8b1d4a942e]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-23T19:50:53.393Z] [worker-us-central1-geocode-ad289323-f121-4a56-a8d3-1f8b1d4a942e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-ad289323-f121-4a56-a8d3-1f8b1d4a942e]: IDLE"}}
+[debug] [2022-10-23T19:50:53.393Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 0.977125ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 0.977125ms"}}
+[debug] [2022-10-23T19:54:51.277Z] File /Users/allendungo/Work/LetsEat/functions/geocode/location.mock.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/geocode/location.mock.js changed, reloading triggers"}}
+[debug] [2022-10-23T19:54:52.279Z] Validating nodejs source
+[debug] [2022-10-23T19:54:52.890Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T19:54:52.891Z] Building nodejs source
+[debug] [2022-10-23T19:54:52.891Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T19:54:52.891Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T19:54:52.964Z] Serving at port 9005
+
+[debug] [2022-10-23T19:54:53.023Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T19:54:53.026Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode."}}
+[debug] [2022-10-23T19:54:53.028Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-10-23T19:54:53.028Z] [worker-us-central1-geocode-ad289323-f121-4a56-a8d3-1f8b1d4a942e]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-ad289323-f121-4a56-a8d3-1f8b1d4a942e]: FINISHING"}}
+[debug] [2022-10-23T19:54:53.030Z] [worker-us-central1-geocode-ad289323-f121-4a56-a8d3-1f8b1d4a942e]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-ad289323-f121-4a56-a8d3-1f8b1d4a942e]: exited"}}
+[debug] [2022-10-23T19:54:53.030Z] [worker-us-central1-geocode-ad289323-f121-4a56-a8d3-1f8b1d4a942e]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-ad289323-f121-4a56-a8d3-1f8b1d4a942e]: FINISHED"}}
+[debug] [2022-10-23T19:57:21.703Z] File /Users/allendungo/Work/LetsEat/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T19:57:22.705Z] Validating nodejs source
+[debug] [2022-10-23T19:57:23.350Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T19:57:23.350Z] Building nodejs source
+[debug] [2022-10-23T19:57:23.350Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T19:57:23.350Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T19:57:23.428Z] Serving at port 9005
+
+[debug] [2022-10-23T19:57:23.491Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T19:57:23.493Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode."}}
+[debug] [2022-10-23T19:57:30.524Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T19:57:30.524Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T19:57:30.524Z] Accepted request GET /letseat-bd251/us-central1/geocode --> us-central1-geocode
+[debug] [2022-10-23T19:57:30.525Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T19:57:30.525Z] [functions] Got req.url=/letseat-bd251/us-central1/geocode, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/geocode, mapping to path=/"}}
+[debug] [2022-10-23T19:57:30.526Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-10-23T19:57:30.535Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-10-23T19:57:30.536Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-10-23T19:57:30.860Z] [runtime-status] [51905] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51905] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T19:57:30.860Z] [runtime-status] [51905] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51905] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:57:30.860Z] [runtime-status] [51905] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51905] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-23T19:57:30.861Z] [runtime-status] [51905] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51905] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:57:30.913Z] [runtime-status] [51905] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51905] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-23T19:57:30.913Z] [runtime-status] [51905] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51905] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2022-10-23T19:57:30.913Z] [runtime-status] [51905] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51905] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:57:30.913Z] [runtime-status] [51905] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51905] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T19:57:30.914Z] [runtime-status] [51905] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51905] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:57:30.914Z] [runtime-status] [51905] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51905] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-23T19:57:30.916Z] [runtime-status] [51905] Functions runtime initialized. {"cwd":"/Users/allendungo/Work/LetsEat/functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51905] Functions runtime initialized. {\"cwd\":\"/Users/allendungo/Work/LetsEat/functions\",\"node_version\":\"16.15.1\"}"}}
+[debug] [2022-10-23T19:57:30.917Z] [runtime-status] [51905] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_b3f9686d408851c1.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51905] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_b3f9686d408851c1.sock"}}
+[debug] [2022-10-23T19:57:30.945Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-23T19:57:30.945Z] [worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-23T19:57:30.948Z] [worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: IDLE"}}
+[debug] [2022-10-23T19:57:30.948Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 1.125458ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 1.125458ms"}}
+[debug] [2022-10-23T19:57:55.278Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T19:57:55.278Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T19:57:55.278Z] Accepted request GET /letseat-bd251/us-central1/geocode?city=Antwerp --> us-central1-geocode
+[debug] [2022-10-23T19:57:55.279Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T19:57:55.279Z] [functions] Got req.url=/letseat-bd251/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp"}}
+[debug] [2022-10-23T19:57:55.280Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-23T19:57:55.280Z] [worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-23T19:57:55.285Z] [worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: IDLE"}}
+[debug] [2022-10-23T19:57:55.285Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 1.736542ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 1.736542ms"}}
+[debug] [2022-10-23T19:58:43.430Z] File /Users/allendungo/Work/LetsEat/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T19:58:44.431Z] Validating nodejs source
+[debug] [2022-10-23T19:58:45.497Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T19:58:45.497Z] Building nodejs source
+[debug] [2022-10-23T19:58:45.497Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T19:58:45.498Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T19:58:45.584Z] Serving at port 9005
+
+[debug] [2022-10-23T19:58:45.648Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T19:58:45.651Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode."}}
+[debug] [2022-10-23T19:58:45.653Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-10-23T19:58:45.653Z] [worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: FINISHING"}}
+[debug] [2022-10-23T19:58:45.655Z] [worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: exited"}}
+[debug] [2022-10-23T19:58:45.655Z] [worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-caa105c2-738d-4655-81bf-25e84122b844]: FINISHED"}}
+[debug] [2022-10-23T19:58:46.722Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T19:58:46.722Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T19:58:46.722Z] Accepted request GET /letseat-bd251/us-central1/geocode?city=Antwerp --> us-central1-geocode
+[debug] [2022-10-23T19:58:46.722Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T19:58:46.722Z] [functions] Got req.url=/letseat-bd251/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp"}}
+[debug] [2022-10-23T19:58:46.722Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-10-23T19:58:46.726Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-10-23T19:58:46.727Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-10-23T19:58:47.017Z] [runtime-status] [51931] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51931] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T19:58:47.017Z] [runtime-status] [51931] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51931] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:58:47.017Z] [runtime-status] [51931] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51931] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-23T19:58:47.018Z] [runtime-status] [51931] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51931] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:58:47.068Z] [runtime-status] [51931] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51931] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-23T19:58:47.069Z] [runtime-status] [51931] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51931] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2022-10-23T19:58:47.069Z] [runtime-status] [51931] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51931] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:58:47.069Z] [runtime-status] [51931] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51931] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T19:58:47.070Z] [runtime-status] [51931] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51931] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:58:47.070Z] [runtime-status] [51931] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51931] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-23T19:58:47.072Z] [runtime-status] [51931] Functions runtime initialized. {"cwd":"/Users/allendungo/Work/LetsEat/functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51931] Functions runtime initialized. {\"cwd\":\"/Users/allendungo/Work/LetsEat/functions\",\"node_version\":\"16.15.1\"}"}}
+[debug] [2022-10-23T19:58:47.073Z] [runtime-status] [51931] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_57496fafc052cc51.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51931] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_57496fafc052cc51.sock"}}
+[debug] [2022-10-23T19:58:47.137Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-23T19:58:47.137Z] [worker-us-central1-geocode-6700564e-2305-438e-ba54-0548086a817c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-6700564e-2305-438e-ba54-0548086a817c]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-23T19:58:47.140Z] [worker-us-central1-geocode-6700564e-2305-438e-ba54-0548086a817c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-6700564e-2305-438e-ba54-0548086a817c]: IDLE"}}
+[debug] [2022-10-23T19:58:47.141Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 1.448167ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 1.448167ms"}}
+[debug] [2022-10-23T19:59:41.662Z] File /Users/allendungo/Work/LetsEat/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T19:59:42.666Z] Validating nodejs source
+[debug] [2022-10-23T19:59:43.251Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T19:59:43.252Z] Building nodejs source
+[debug] [2022-10-23T19:59:43.252Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T19:59:43.252Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T19:59:43.323Z] Serving at port 9005
+
+[debug] [2022-10-23T19:59:43.384Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T19:59:43.386Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode."}}
+[debug] [2022-10-23T19:59:43.388Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-10-23T19:59:43.388Z] [worker-us-central1-geocode-6700564e-2305-438e-ba54-0548086a817c]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-6700564e-2305-438e-ba54-0548086a817c]: FINISHING"}}
+[debug] [2022-10-23T19:59:43.390Z] [worker-us-central1-geocode-6700564e-2305-438e-ba54-0548086a817c]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-6700564e-2305-438e-ba54-0548086a817c]: exited"}}
+[debug] [2022-10-23T19:59:43.390Z] [worker-us-central1-geocode-6700564e-2305-438e-ba54-0548086a817c]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-6700564e-2305-438e-ba54-0548086a817c]: FINISHED"}}
+[debug] [2022-10-23T19:59:45.840Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T19:59:45.841Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T19:59:45.841Z] Accepted request GET /letseat-bd251/us-central1/geocode?city=Antwerp --> us-central1-geocode
+[debug] [2022-10-23T19:59:45.841Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T19:59:45.841Z] [functions] Got req.url=/letseat-bd251/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp"}}
+[debug] [2022-10-23T19:59:45.842Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-10-23T19:59:45.847Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-10-23T19:59:45.848Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-10-23T19:59:46.172Z] [runtime-status] [51951] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51951] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T19:59:46.172Z] [runtime-status] [51951] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51951] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:59:46.172Z] [runtime-status] [51951] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51951] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-23T19:59:46.172Z] [runtime-status] [51951] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51951] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:59:46.222Z] [runtime-status] [51951] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51951] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-23T19:59:46.222Z] [runtime-status] [51951] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51951] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2022-10-23T19:59:46.222Z] [runtime-status] [51951] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51951] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:59:46.223Z] [runtime-status] [51951] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51951] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T19:59:46.223Z] [runtime-status] [51951] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51951] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T19:59:46.223Z] [runtime-status] [51951] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51951] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-23T19:59:46.230Z] [runtime-status] [51951] Functions runtime initialized. {"cwd":"/Users/allendungo/Work/LetsEat/functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51951] Functions runtime initialized. {\"cwd\":\"/Users/allendungo/Work/LetsEat/functions\",\"node_version\":\"16.15.1\"}"}}
+[debug] [2022-10-23T19:59:46.230Z] [runtime-status] [51951] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_4694a358d55ba99d.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [51951] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_4694a358d55ba99d.sock"}}
+[debug] [2022-10-23T19:59:46.258Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-23T19:59:46.258Z] [worker-us-central1-geocode-bf3e78d6-4f2d-499e-8eba-ae28f05b288b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bf3e78d6-4f2d-499e-8eba-ae28f05b288b]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-23T19:59:46.261Z] [worker-us-central1-geocode-bf3e78d6-4f2d-499e-8eba-ae28f05b288b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bf3e78d6-4f2d-499e-8eba-ae28f05b288b]: IDLE"}}
+[debug] [2022-10-23T19:59:46.261Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 1.279375ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 1.279375ms"}}
+[debug] [2022-10-23T20:00:39.806Z] File /Users/allendungo/Work/LetsEat/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:00:40.808Z] Validating nodejs source
+[debug] [2022-10-23T20:00:41.406Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:00:41.406Z] Building nodejs source
+[debug] [2022-10-23T20:00:41.406Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:00:41.407Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:00:41.484Z] Serving at port 9005
+
+[debug] [2022-10-23T20:00:41.543Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:00:41.545Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode."}}
+[debug] [2022-10-23T20:00:41.548Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-10-23T20:00:41.548Z] [worker-us-central1-geocode-bf3e78d6-4f2d-499e-8eba-ae28f05b288b]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bf3e78d6-4f2d-499e-8eba-ae28f05b288b]: FINISHING"}}
+[debug] [2022-10-23T20:00:41.551Z] [worker-us-central1-geocode-bf3e78d6-4f2d-499e-8eba-ae28f05b288b]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bf3e78d6-4f2d-499e-8eba-ae28f05b288b]: exited"}}
+[debug] [2022-10-23T20:00:41.551Z] [worker-us-central1-geocode-bf3e78d6-4f2d-499e-8eba-ae28f05b288b]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bf3e78d6-4f2d-499e-8eba-ae28f05b288b]: FINISHED"}}
+[debug] [2022-10-23T20:04:45.918Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:04:45.920Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:04:45.920Z] Accepted request GET /letseat-bd251/us-central1/geocode?city=san%20francisco --> us-central1-geocode
+[debug] [2022-10-23T20:04:45.922Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:04:45.923Z] [functions] Got req.url=/letseat-bd251/us-central1/geocode?city=san%20francisco, mapping to path=/?city=san%20francisco {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/geocode?city=san%20francisco, mapping to path=/?city=san%20francisco"}}
+[debug] [2022-10-23T20:04:45.923Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-10-23T20:04:45.932Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-10-23T20:04:45.932Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-10-23T20:04:46.617Z] [runtime-status] [52274] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [52274] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T20:04:46.618Z] [runtime-status] [52274] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [52274] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:04:46.618Z] [runtime-status] [52274] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [52274] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-23T20:04:46.619Z] [runtime-status] [52274] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [52274] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:04:46.716Z] [runtime-status] [52274] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [52274] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-23T20:04:46.716Z] [runtime-status] [52274] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [52274] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2022-10-23T20:04:46.716Z] [runtime-status] [52274] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [52274] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:04:46.717Z] [runtime-status] [52274] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [52274] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T20:04:46.718Z] [runtime-status] [52274] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [52274] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:04:46.718Z] [runtime-status] [52274] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [52274] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-23T20:04:46.721Z] [runtime-status] [52274] Functions runtime initialized. {"cwd":"/Users/allendungo/Work/LetsEat/functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [52274] Functions runtime initialized. {\"cwd\":\"/Users/allendungo/Work/LetsEat/functions\",\"node_version\":\"16.15.1\"}"}}
+[debug] [2022-10-23T20:04:46.721Z] [runtime-status] [52274] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_350ab356b3494685.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [52274] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_350ab356b3494685.sock"}}
+[debug] [2022-10-23T20:04:46.750Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-23T20:04:46.750Z] [worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-23T20:04:46.753Z] [worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: IDLE"}}
+[debug] [2022-10-23T20:04:46.754Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 1.185333ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 1.185333ms"}}
+[debug] [2022-10-23T20:05:30.874Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:05:30.875Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:05:30.875Z] Accepted request GET /letseat-bd251/us-central1/geocode?city=san%20francisco --> us-central1-geocode
+[debug] [2022-10-23T20:05:30.876Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:05:30.876Z] [functions] Got req.url=/letseat-bd251/us-central1/geocode?city=san%20francisco, mapping to path=/?city=san%20francisco {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/geocode?city=san%20francisco, mapping to path=/?city=san%20francisco"}}
+[debug] [2022-10-23T20:05:30.876Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-23T20:05:30.876Z] [worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-23T20:05:30.879Z] [worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: IDLE"}}
+[debug] [2022-10-23T20:05:30.879Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 0.691834ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 0.691834ms"}}
+[debug] [2022-10-23T20:05:40.410Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:05:40.410Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:05:40.410Z] Accepted request GET /letseat-bd251/us-central1/geocode?city=chicago --> us-central1-geocode
+[debug] [2022-10-23T20:05:40.410Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:05:40.411Z] [functions] Got req.url=/letseat-bd251/us-central1/geocode?city=chicago, mapping to path=/?city=chicago {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/geocode?city=chicago, mapping to path=/?city=chicago"}}
+[debug] [2022-10-23T20:05:40.411Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-23T20:05:40.411Z] [worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-23T20:05:40.414Z] [worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: IDLE"}}
+[debug] [2022-10-23T20:05:40.414Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 0.794209ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 0.794209ms"}}
+[debug] [2022-10-23T20:06:47.807Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:06:47.808Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:06:47.808Z] Accepted request GET /letseat-bd251/us-central1/geocode?city=chicago --> us-central1-geocode
+[debug] [2022-10-23T20:06:47.808Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:06:47.808Z] [functions] Got req.url=/letseat-bd251/us-central1/geocode?city=chicago, mapping to path=/?city=chicago {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/geocode?city=chicago, mapping to path=/?city=chicago"}}
+[debug] [2022-10-23T20:06:47.808Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-23T20:06:47.808Z] [worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[info] i  functions: Finished "geocode" in 0.331833ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 0.331833ms"}}
+[debug] [2022-10-23T20:06:47.813Z] [worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: IDLE"}}
+[debug] [2022-10-23T20:06:47.814Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-23T20:06:57.510Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:06:57.512Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:06:57.512Z] Accepted request GET /letseat-bd251/us-central1/geocode?city=chicago --> us-central1-geocode
+[debug] [2022-10-23T20:06:57.513Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:06:57.513Z] [functions] Got req.url=/letseat-bd251/us-central1/geocode?city=chicago, mapping to path=/?city=chicago {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/geocode?city=chicago, mapping to path=/?city=chicago"}}
+[debug] [2022-10-23T20:06:57.513Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-23T20:06:57.513Z] [worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[info] i  functions: Finished "geocode" in 0.364709ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 0.364709ms"}}
+[debug] [2022-10-23T20:06:57.518Z] [worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: IDLE"}}
+[debug] [2022-10-23T20:06:57.518Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-23T20:12:48.210Z] File /Users/allendungo/Work/LetsEat/functions/places/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:12:49.214Z] Validating nodejs source
+[debug] [2022-10-23T20:12:49.981Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:12:49.981Z] Building nodejs source
+[debug] [2022-10-23T20:12:49.981Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:12:49.982Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:12:50.086Z] Serving at port 9005
+
+[debug] [2022-10-23T20:12:50.181Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:12:50.189Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode."}}
+[debug] [2022-10-23T20:12:50.193Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-10-23T20:12:50.193Z] [worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: FINISHING"}}
+[debug] [2022-10-23T20:12:50.199Z] [worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: exited"}}
+[debug] [2022-10-23T20:12:50.199Z] [worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3f6db46f-f2e6-4172-a0c2-1ec3225f4f18]: FINISHED"}}
+[debug] [2022-10-23T20:13:28.797Z] File /Users/allendungo/Work/LetsEat/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:13:29.799Z] Validating nodejs source
+[debug] [2022-10-23T20:13:30.435Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:13:30.435Z] Building nodejs source
+[debug] [2022-10-23T20:13:30.435Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:13:30.435Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:13:30.526Z] Serving at port 9005
+
+[debug] [2022-10-23T20:13:30.609Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:13:30.612Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[info] ✔  functions[us-central1-placesNearby]: http function initialized (http://localhost:5001/letseat-bd251/us-central1/placesNearby). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/letseat-bd251/us-central1/placesNearby)."}}
+[debug] [2022-10-23T20:13:47.204Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:13:47.204Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:13:47.204Z] Accepted request GET /letseat-bd251/us-central1/placesNearby --> us-central1-placesNearby
+[debug] [2022-10-23T20:13:47.205Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:13:47.205Z] [functions] Got req.url=/letseat-bd251/us-central1/placesNearby, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/placesNearby, mapping to path=/"}}
+[debug] [2022-10-23T20:13:47.205Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-10-23T20:13:47.211Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:13:47.212Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2022-10-23T20:13:47.830Z] [runtime-status] [52586] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52586] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T20:13:47.831Z] [runtime-status] [52586] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52586] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:13:47.831Z] [runtime-status] [52586] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52586] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-23T20:13:47.831Z] [runtime-status] [52586] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52586] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:13:47.914Z] [runtime-status] [52586] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52586] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-23T20:13:47.914Z] [runtime-status] [52586] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52586] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2022-10-23T20:13:47.914Z] [runtime-status] [52586] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52586] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:13:47.915Z] [runtime-status] [52586] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52586] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T20:13:47.916Z] [runtime-status] [52586] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52586] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:13:47.916Z] [runtime-status] [52586] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52586] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-23T20:13:47.919Z] [runtime-status] [52586] Functions runtime initialized. {"cwd":"/Users/allendungo/Work/LetsEat/functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52586] Functions runtime initialized. {\"cwd\":\"/Users/allendungo/Work/LetsEat/functions\",\"node_version\":\"16.15.1\"}"}}
+[debug] [2022-10-23T20:13:47.920Z] [runtime-status] [52586] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_3e469afc4a1c6d28.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52586] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_3e469afc4a1c6d28.sock"}}
+[debug] [2022-10-23T20:13:47.924Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:13:47.924Z] [worker-us-central1-placesNearby-b6969525-e494-46ec-8cf7-f669631e1c2a]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b6969525-e494-46ec-8cf7-f669631e1c2a]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-23T20:13:47.926Z] [worker-us-central1-placesNearby-b6969525-e494-46ec-8cf7-f669631e1c2a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b6969525-e494-46ec-8cf7-f669631e1c2a]: IDLE"}}
+[debug] [2022-10-23T20:13:47.926Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 0.833042ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 0.833042ms"}}
+[debug] [2022-10-23T20:16:00.580Z] File /Users/allendungo/Work/LetsEat/functions/places/mock/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/mock/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:16:01.583Z] Validating nodejs source
+[debug] [2022-10-23T20:16:02.285Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:16:02.285Z] Building nodejs source
+[debug] [2022-10-23T20:16:02.286Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:16:02.286Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:16:02.394Z] Serving at port 9005
+
+[debug] [2022-10-23T20:16:02.484Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:16:02.486Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:16:02.489Z] [worker-pool] Shutting down IDLE worker (us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:16:02.489Z] [worker-us-central1-placesNearby-b6969525-e494-46ec-8cf7-f669631e1c2a]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b6969525-e494-46ec-8cf7-f669631e1c2a]: FINISHING"}}
+[debug] [2022-10-23T20:16:02.492Z] [worker-us-central1-placesNearby-b6969525-e494-46ec-8cf7-f669631e1c2a]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b6969525-e494-46ec-8cf7-f669631e1c2a]: exited"}}
+[debug] [2022-10-23T20:16:02.492Z] [worker-us-central1-placesNearby-b6969525-e494-46ec-8cf7-f669631e1c2a]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b6969525-e494-46ec-8cf7-f669631e1c2a]: FINISHED"}}
+[debug] [2022-10-23T20:16:20.740Z] File /Users/allendungo/Work/LetsEat/functions/places/mock/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/mock/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:16:21.743Z] Validating nodejs source
+[debug] [2022-10-23T20:16:22.450Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:16:22.450Z] Building nodejs source
+[debug] [2022-10-23T20:16:22.450Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:16:22.451Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:16:22.553Z] Serving at port 9005
+
+[debug] [2022-10-23T20:16:22.647Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:16:22.648Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:16:47.012Z] File /Users/allendungo/Work/LetsEat/functions/places/mock/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/mock/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:16:48.014Z] Validating nodejs source
+[debug] [2022-10-23T20:16:48.692Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:16:48.692Z] Building nodejs source
+[debug] [2022-10-23T20:16:48.692Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:16:48.693Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:16:48.786Z] Serving at port 9005
+
+[debug] [2022-10-23T20:16:48.873Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:16:48.876Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:17:19.558Z] File /Users/allendungo/Work/LetsEat/functions/places/mock/antwerp.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/mock/antwerp.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:17:20.560Z] Validating nodejs source
+[debug] [2022-10-23T20:17:21.223Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:17:21.224Z] Building nodejs source
+[debug] [2022-10-23T20:17:21.224Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:17:21.224Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:17:21.359Z] Serving at port 9005
+
+[debug] [2022-10-23T20:17:21.462Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:17:21.464Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:17:54.857Z] File /Users/allendungo/Work/LetsEat/functions/places/mock/chicago.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/mock/chicago.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:17:55.859Z] Validating nodejs source
+[debug] [2022-10-23T20:17:56.511Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:17:56.511Z] Building nodejs source
+[debug] [2022-10-23T20:17:56.511Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:17:56.512Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:17:56.605Z] Serving at port 9005
+
+[debug] [2022-10-23T20:17:56.804Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:17:56.805Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:18:08.388Z] File /Users/allendungo/Work/LetsEat/functions/places/mock/san_francisco.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/mock/san_francisco.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:18:08.489Z] File /Users/allendungo/Work/LetsEat/functions/places/mock/san_francisco.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/mock/san_francisco.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:18:09.490Z] Validating nodejs source
+[debug] [2022-10-23T20:18:10.723Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:18:10.724Z] Building nodejs source
+[debug] [2022-10-23T20:18:10.724Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:18:10.724Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:18:10.816Z] Serving at port 9005
+
+[debug] [2022-10-23T20:18:10.903Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:18:10.905Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:18:24.843Z] File /Users/allendungo/Work/LetsEat/functions/places/mock/toronto.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/mock/toronto.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:18:24.944Z] File /Users/allendungo/Work/LetsEat/functions/places/mock/toronto.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/mock/toronto.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:18:25.945Z] Validating nodejs source
+[debug] [2022-10-23T20:18:26.572Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:18:26.572Z] Building nodejs source
+[debug] [2022-10-23T20:18:26.572Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:18:26.573Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:18:26.664Z] Serving at port 9005
+
+[debug] [2022-10-23T20:18:26.751Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:18:26.753Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:20:39.895Z] File /Users/allendungo/Work/LetsEat/functions/places/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:20:40.901Z] Validating nodejs source
+[debug] [2022-10-23T20:20:41.629Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:20:41.629Z] Building nodejs source
+[debug] [2022-10-23T20:20:41.629Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:20:41.630Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:20:41.726Z] Serving at port 9005
+
+[debug] [2022-10-23T20:20:41.825Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:20:41.827Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:21:13.533Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:21:13.533Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:21:13.533Z] Accepted request GET /letseat-bd251/us-central1/placesNearby?location=location --> us-central1-placesNearby
+[debug] [2022-10-23T20:21:13.534Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:21:13.536Z] [functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=location, mapping to path=/?location=location {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=location, mapping to path=/?location=location"}}
+[debug] [2022-10-23T20:21:13.536Z] [worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0"}}
+[debug] [2022-10-23T20:21:13.547Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:21:13.547Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2022-10-23T20:21:14.098Z] [runtime-status] [52992] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52992] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T20:21:14.098Z] [runtime-status] [52992] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52992] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:21:14.098Z] [runtime-status] [52992] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52992] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-23T20:21:14.103Z] [runtime-status] [52992] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52992] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:21:14.182Z] [runtime-status] [52992] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52992] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-23T20:21:14.182Z] [runtime-status] [52992] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52992] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2022-10-23T20:21:14.182Z] [runtime-status] [52992] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52992] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:21:14.183Z] [runtime-status] [52992] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52992] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T20:21:14.184Z] [runtime-status] [52992] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52992] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:21:14.184Z] [runtime-status] [52992] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52992] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-23T20:21:14.189Z] [runtime-status] [52992] Functions runtime initialized. {"cwd":"/Users/allendungo/Work/LetsEat/functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52992] Functions runtime initialized. {\"cwd\":\"/Users/allendungo/Work/LetsEat/functions\",\"node_version\":\"16.15.1\"}"}}
+[debug] [2022-10-23T20:21:14.189Z] [runtime-status] [52992] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_fdb7da56cc7213bf.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [52992] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_fdb7da56cc7213bf.sock"}}
+[debug] [2022-10-23T20:21:14.261Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:21:14.261Z] [worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-23T20:21:14.265Z] [worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: IDLE"}}
+[debug] [2022-10-23T20:21:14.266Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 1.485875ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 1.485875ms"}}
+[debug] [2022-10-23T20:21:19.188Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:21:19.188Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:21:19.188Z] Accepted request GET /letseat-bd251/us-central1/placesNearby?location=somelocation --> us-central1-placesNearby
+[debug] [2022-10-23T20:21:19.189Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:21:19.189Z] [functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=somelocation, mapping to path=/?location=somelocation {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=somelocation, mapping to path=/?location=somelocation"}}
+[debug] [2022-10-23T20:21:19.189Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:21:19.189Z] [worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-23T20:21:19.193Z] [worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: IDLE"}}
+[debug] [2022-10-23T20:21:19.193Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 1.256375ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 1.256375ms"}}
+[debug] [2022-10-23T20:21:36.459Z] File /Users/allendungo/Work/LetsEat/functions/places/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:21:37.461Z] Validating nodejs source
+[debug] [2022-10-23T20:21:38.106Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:21:38.106Z] Building nodejs source
+[debug] [2022-10-23T20:21:38.106Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:21:38.107Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:21:38.201Z] Serving at port 9005
+
+[debug] [2022-10-23T20:21:38.292Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:21:38.293Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:21:38.296Z] [worker-pool] Shutting down IDLE worker (us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:21:38.296Z] [worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: FINISHING"}}
+[debug] [2022-10-23T20:21:38.299Z] [worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: exited"}}
+[debug] [2022-10-23T20:21:38.299Z] [worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-8339107b-a287-4602-8c74-624c950cedea]: FINISHED"}}
+[debug] [2022-10-23T20:22:21.224Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:22:21.224Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:22:21.224Z] Accepted request GET /letseat-bd251/us-central1/placesNearby?location=somelocation --> us-central1-placesNearby
+[debug] [2022-10-23T20:22:21.224Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:22:21.225Z] [functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=somelocation, mapping to path=/?location=somelocation {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=somelocation, mapping to path=/?location=somelocation"}}
+[debug] [2022-10-23T20:22:21.225Z] [worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0"}}
+[debug] [2022-10-23T20:22:21.230Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:22:21.230Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2022-10-23T20:22:21.737Z] [runtime-status] [53053] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53053] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T20:22:21.737Z] [runtime-status] [53053] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53053] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:22:21.737Z] [runtime-status] [53053] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53053] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-23T20:22:21.738Z] [runtime-status] [53053] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53053] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:22:21.816Z] [runtime-status] [53053] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53053] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-23T20:22:21.816Z] [runtime-status] [53053] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53053] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2022-10-23T20:22:21.816Z] [runtime-status] [53053] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53053] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:22:21.816Z] [runtime-status] [53053] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53053] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T20:22:21.817Z] [runtime-status] [53053] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53053] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:22:21.817Z] [runtime-status] [53053] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53053] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-23T20:22:21.822Z] [runtime-status] [53053] Functions runtime initialized. {"cwd":"/Users/allendungo/Work/LetsEat/functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53053] Functions runtime initialized. {\"cwd\":\"/Users/allendungo/Work/LetsEat/functions\",\"node_version\":\"16.15.1\"}"}}
+[debug] [2022-10-23T20:22:21.822Z] [runtime-status] [53053] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_96717b39653abf58.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53053] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_96717b39653abf58.sock"}}
+[debug] [2022-10-23T20:22:21.842Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:22:21.842Z] [worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-23T20:22:21.844Z] [worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: IDLE"}}
+[debug] [2022-10-23T20:22:21.844Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 0.473791ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 0.473791ms"}}
+[debug] [2022-10-23T20:22:25.047Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:22:25.047Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:22:25.047Z] Accepted request GET /letseat-bd251/us-central1/placesNearby?location=37.7749295,-122.4194155 --> us-central1-placesNearby
+[debug] [2022-10-23T20:22:25.048Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:22:25.048Z] [functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155"}}
+[debug] [2022-10-23T20:22:25.048Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:22:25.048Z] [worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-23T20:22:25.056Z] [worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: IDLE"}}
+[debug] [2022-10-23T20:22:25.056Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 4.535666ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 4.535666ms"}}
+[debug] [2022-10-23T20:25:40.714Z] File /Users/allendungo/Work/LetsEat/functions/places/mock/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/mock/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:25:41.716Z] Validating nodejs source
+[debug] [2022-10-23T20:25:42.369Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:25:42.369Z] Building nodejs source
+[debug] [2022-10-23T20:25:42.369Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:25:42.370Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:25:42.470Z] Serving at port 9005
+
+[debug] [2022-10-23T20:25:42.571Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:25:42.574Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:25:42.576Z] [worker-pool] Shutting down IDLE worker (us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:25:42.576Z] [worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: FINISHING"}}
+[debug] [2022-10-23T20:25:42.580Z] [worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: exited"}}
+[debug] [2022-10-23T20:25:42.580Z] [worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-f90edb54-0174-4583-9f24-858c1c73d1c3]: FINISHED"}}
+[debug] [2022-10-23T20:25:53.267Z] File /Users/allendungo/Work/LetsEat/functions/places/mock/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/mock/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:25:54.268Z] Validating nodejs source
+[debug] [2022-10-23T20:25:54.840Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:25:54.841Z] Building nodejs source
+[debug] [2022-10-23T20:25:54.841Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:25:54.841Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:25:54.936Z] Serving at port 9005
+
+[debug] [2022-10-23T20:25:55.025Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:25:55.027Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:26:47.791Z] File /Users/allendungo/Work/LetsEat/functions/places/mock/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/mock/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:26:48.792Z] Validating nodejs source
+[debug] [2022-10-23T20:26:49.447Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:26:49.448Z] Building nodejs source
+[debug] [2022-10-23T20:26:49.448Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:26:49.448Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:26:49.539Z] Serving at port 9005
+
+[debug] [2022-10-23T20:26:49.629Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:26:49.631Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:27:27.758Z] File /Users/allendungo/Work/LetsEat/functions/places/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:27:28.760Z] Validating nodejs source
+[debug] [2022-10-23T20:27:29.463Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:27:29.464Z] Building nodejs source
+[debug] [2022-10-23T20:27:29.464Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:27:29.464Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:27:29.566Z] Serving at port 9005
+
+[debug] [2022-10-23T20:27:29.659Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:27:29.661Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:27:59.867Z] File /Users/allendungo/Work/LetsEat/functions/places/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/allendungo/Work/LetsEat/functions/places/index.js changed, reloading triggers"}}
+[debug] [2022-10-23T20:28:00.870Z] Validating nodejs source
+[debug] [2022-10-23T20:28:01.544Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-23T20:28:01.544Z] Building nodejs source
+[debug] [2022-10-23T20:28:01.544Z] Analyzing nodejs backend spec
+[debug] [2022-10-23T20:28:01.545Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-23T20:28:01.634Z] Serving at port 9005
+
+[debug] [2022-10-23T20:28:01.722Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-23T20:28:01.724Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-10-23T20:28:16.063Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:28:16.063Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:28:16.063Z] Accepted request GET /letseat-bd251/us-central1/placesNearby?location=37.7749295,-122.4194155 --> us-central1-placesNearby
+[debug] [2022-10-23T20:28:16.064Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:28:16.064Z] [functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155"}}
+[debug] [2022-10-23T20:28:16.065Z] [worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0"}}
+[debug] [2022-10-23T20:28:16.072Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:28:16.072Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2022-10-23T20:28:16.702Z] [runtime-status] [53267] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53267] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T20:28:16.702Z] [runtime-status] [53267] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53267] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:28:16.702Z] [runtime-status] [53267] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53267] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-23T20:28:16.703Z] [runtime-status] [53267] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53267] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:28:16.781Z] [runtime-status] [53267] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53267] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-23T20:28:16.781Z] [runtime-status] [53267] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53267] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2022-10-23T20:28:16.781Z] [runtime-status] [53267] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53267] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:28:16.781Z] [runtime-status] [53267] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53267] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T20:28:16.782Z] [runtime-status] [53267] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53267] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:28:16.783Z] [runtime-status] [53267] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53267] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-23T20:28:16.788Z] [runtime-status] [53267] Functions runtime initialized. {"cwd":"/Users/allendungo/Work/LetsEat/functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53267] Functions runtime initialized. {\"cwd\":\"/Users/allendungo/Work/LetsEat/functions\",\"node_version\":\"16.15.1\"}"}}
+[debug] [2022-10-23T20:28:16.788Z] [runtime-status] [53267] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_18fb412fdaad2d1e.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [53267] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_18fb412fdaad2d1e.sock"}}
+[debug] [2022-10-23T20:28:16.889Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:28:16.890Z] [worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-23T20:28:16.894Z] [worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: IDLE"}}
+[debug] [2022-10-23T20:28:16.894Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 2.265541ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 2.265541ms"}}
+[debug] [2022-10-23T20:29:39.194Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:29:39.195Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:29:39.195Z] Accepted request GET /letseat-bd251/us-central1/placesNearby?city=41.878113,-87.629799 --> us-central1-placesNearby
+[debug] [2022-10-23T20:29:39.197Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:29:39.197Z] [functions] Got req.url=/letseat-bd251/us-central1/placesNearby?city=41.878113,-87.629799, mapping to path=/?city=41.878113,-87.629799 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/placesNearby?city=41.878113,-87.629799, mapping to path=/?city=41.878113,-87.629799"}}
+[debug] [2022-10-23T20:29:39.198Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:29:39.198Z] [worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-23T20:29:39.202Z] [worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: IDLE"}}
+[debug] [2022-10-23T20:29:39.202Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 1.083083ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 1.083083ms"}}
+[debug] [2022-10-23T20:30:13.076Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:30:13.076Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:30:13.076Z] Accepted request GET /letseat-bd251/us-central1/placesNearby?city=41.878113,-87.629799 --> us-central1-placesNearby
+[debug] [2022-10-23T20:30:13.077Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:30:13.080Z] [functions] Got req.url=/letseat-bd251/us-central1/placesNearby?city=41.878113,-87.629799, mapping to path=/?city=41.878113,-87.629799 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/placesNearby?city=41.878113,-87.629799, mapping to path=/?city=41.878113,-87.629799"}}
+[debug] [2022-10-23T20:30:13.080Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:30:13.080Z] [worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-23T20:30:13.081Z] [worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: IDLE"}}
+[debug] [2022-10-23T20:30:13.081Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 0.260416ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 0.260416ms"}}
+[debug] [2022-10-23T20:30:23.567Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:30:23.568Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:30:23.568Z] Accepted request GET /letseat-bd251/us-central1/geocode?city=san%20francisco --> us-central1-geocode
+[debug] [2022-10-23T20:30:23.569Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:30:23.569Z] [functions] Got req.url=/letseat-bd251/us-central1/geocode?city=san%20francisco, mapping to path=/?city=san%20francisco {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/geocode?city=san%20francisco, mapping to path=/?city=san%20francisco"}}
+[debug] [2022-10-23T20:30:23.575Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-10-23T20:30:23.575Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-10-23T20:30:24.156Z] [runtime-status] [53393] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [53393] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T20:30:24.156Z] [runtime-status] [53393] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [53393] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:30:24.156Z] [runtime-status] [53393] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [53393] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-23T20:30:24.160Z] [runtime-status] [53393] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [53393] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:30:24.248Z] [runtime-status] [53393] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [53393] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-23T20:30:24.248Z] [runtime-status] [53393] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [53393] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2022-10-23T20:30:24.248Z] [runtime-status] [53393] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [53393] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:30:24.248Z] [runtime-status] [53393] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [53393] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-23T20:30:24.249Z] [runtime-status] [53393] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [53393] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-23T20:30:24.249Z] [runtime-status] [53393] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [53393] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/allendungo/Work/LetsEat/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-23T20:30:24.255Z] [runtime-status] [53393] Functions runtime initialized. {"cwd":"/Users/allendungo/Work/LetsEat/functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [53393] Functions runtime initialized. {\"cwd\":\"/Users/allendungo/Work/LetsEat/functions\",\"node_version\":\"16.15.1\"}"}}
+[debug] [2022-10-23T20:30:24.255Z] [runtime-status] [53393] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_3c5af46f9dd2185c.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [53393] Listening to port: /var/folders/t7/ym6t844x3t39wppbgffqccj40000gn/T/fire_emu_3c5af46f9dd2185c.sock"}}
+[debug] [2022-10-23T20:30:24.289Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-23T20:30:24.289Z] [worker-us-central1-geocode-30dc04a9-98a4-4e30-96c6-2f7b7daaaf3c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-30dc04a9-98a4-4e30-96c6-2f7b7daaaf3c]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-23T20:30:24.292Z] [worker-us-central1-geocode-30dc04a9-98a4-4e30-96c6-2f7b7daaaf3c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-30dc04a9-98a4-4e30-96c6-2f7b7daaaf3c]: IDLE"}}
+[debug] [2022-10-23T20:30:24.292Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 1.160875ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 1.160875ms"}}
+[debug] [2022-10-23T20:30:24.327Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:30:24.327Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:30:24.327Z] Accepted request GET /letseat-bd251/us-central1/placesNearby?city=37.7749295,-122.4194155 --> us-central1-placesNearby
+[debug] [2022-10-23T20:30:24.327Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:30:24.327Z] [functions] Got req.url=/letseat-bd251/us-central1/placesNearby?city=37.7749295,-122.4194155, mapping to path=/?city=37.7749295,-122.4194155 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/placesNearby?city=37.7749295,-122.4194155, mapping to path=/?city=37.7749295,-122.4194155"}}
+[debug] [2022-10-23T20:30:24.327Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:30:24.328Z] [worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-23T20:30:24.329Z] [worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: IDLE"}}
+[debug] [2022-10-23T20:30:24.329Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 0.311292ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 0.311292ms"}}
+[debug] [2022-10-23T20:31:19.379Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:31:19.379Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:31:19.379Z] Accepted request GET /letseat-bd251/us-central1/placesNearby?location=37.7749295,-122.4194155 --> us-central1-placesNearby
+[debug] [2022-10-23T20:31:19.380Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:31:19.380Z] [functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155"}}
+[debug] [2022-10-23T20:31:19.380Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:31:19.380Z] [worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-23T20:31:19.385Z] [worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: IDLE"}}
+[debug] [2022-10-23T20:31:19.385Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 3.887667ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 3.887667ms"}}
+[debug] [2022-10-23T20:31:59.892Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:31:59.892Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:31:59.893Z] Accepted request GET /letseat-bd251/us-central1/geocode?city=chicago --> us-central1-geocode
+[debug] [2022-10-23T20:31:59.893Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:31:59.894Z] [functions] Got req.url=/letseat-bd251/us-central1/geocode?city=chicago, mapping to path=/?city=chicago {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/geocode?city=chicago, mapping to path=/?city=chicago"}}
+[debug] [2022-10-23T20:31:59.894Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-23T20:31:59.894Z] [worker-us-central1-geocode-30dc04a9-98a4-4e30-96c6-2f7b7daaaf3c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-30dc04a9-98a4-4e30-96c6-2f7b7daaaf3c]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-23T20:31:59.899Z] [worker-us-central1-geocode-30dc04a9-98a4-4e30-96c6-2f7b7daaaf3c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-30dc04a9-98a4-4e30-96c6-2f7b7daaaf3c]: IDLE"}}
+[debug] [2022-10-23T20:31:59.899Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 1.315542ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 1.315542ms"}}
+[debug] [2022-10-23T20:32:00.040Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-23T20:32:00.040Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-23T20:32:00.040Z] Accepted request GET /letseat-bd251/us-central1/placesNearby?location=41.878113,-87.629799 --> us-central1-placesNearby
+[debug] [2022-10-23T20:32:00.040Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-23T20:32:00.040Z] [functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=41.878113,-87.629799, mapping to path=/?location=41.878113,-87.629799 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/letseat-bd251/us-central1/placesNearby?location=41.878113,-87.629799, mapping to path=/?location=41.878113,-87.629799"}}
+[debug] [2022-10-23T20:32:00.041Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-23T20:32:00.041Z] [worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-23T20:32:00.046Z] [worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-079eabde-db0e-41a2-8095-53c112a24a89]: IDLE"}}
+[debug] [2022-10-23T20:32:00.046Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 1.996583ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 1.996583ms"}}
