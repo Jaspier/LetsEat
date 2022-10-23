@@ -8,9 +8,18 @@ import { Text } from "../typography/text.component";
 const FavouritesWrapper = styled.View`
   padding: 10px;
 `;
+
+const NoFavouritesWrapper = styled.View`
+  align-items: center;
+`;
+
 export const FavouritesBar = ({ favourites, onNavigate }) => {
   if (!favourites.length) {
-    return null;
+    return (
+      <NoFavouritesWrapper>
+        <Text center>No favourites yet</Text>
+      </NoFavouritesWrapper>
+    );
   }
   return (
     <FavouritesWrapper>
